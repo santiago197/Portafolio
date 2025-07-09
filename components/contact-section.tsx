@@ -23,7 +23,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">santiago.rodriguez@email.com</p>
+                  <p className="text-gray-600">santiago.rodriguez19@outlook.com</p>
                 </div>
               </div>
 
@@ -33,7 +33,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Teléfono</h4>
-                  <p className="text-gray-600">+57 (XXX) XXX-XXXX</p>
+                  <p className="text-gray-600">+57 (315) 882-4024</p>
                 </div>
               </div>
 
