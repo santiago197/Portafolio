@@ -66,7 +66,7 @@ export function HeroSection() {
           <div className="flex-shrink-0">
             <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl bg-gradient-to-br from-emerald-400 to-emerald-600">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="/FotoCv1.png?height=400&width=400"
                 alt="Santiago Rodríguez - Desarrollador Full Stack"
                 className="w-full h-full object-cover"
               />
