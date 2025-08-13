@@ -1,3 +1,7 @@
+"use client"
+import { useState } from "react"
+import type React from "react"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -5,6 +9,50 @@ import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react"
 
 export function ContactSection() {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    asunto: "",
+    mensaje: "",
+  })
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }))
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+
+    // Crear el mensaje para WhatsApp
+    const mensaje =
+      `*Nuevo mensaje desde el portafolio*%0A%0A` +
+      `*Nombre:* ${formData.nombre}%0A` +
+      `*Email:* ${formData.email}%0A` +
+      `*Asunto:* ${formData.asunto}%0A%0A` +
+      `*Mensaje:*%0A${formData.mensaje}`
+
+    // Número de WhatsApp (sin el +)
+    const numeroWhatsApp = "573158824024"
+
+    // URL de WhatsApp
+    const whatsappURL = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`
+
+    // Abrir WhatsApp
+    window.open(whatsappURL, "_blank")
+
+    // Limpiar formulario
+    setFormData({
+      nombre: "",
+      email: "",
+      asunto: "",
+      mensaje: "",
+    })
+  }
+
   return (
     <section id="contacto" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -74,37 +122,68 @@ export function ContactSection() {
           <Card>
             <CardHeader>
               <CardTitle>Envíame un mensaje</CardTitle>
+              <p className="text-sm text-gray-600">Se abrirá WhatsApp con tu mensaje</p>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-2">
-                      Nombre
+                      Nombre *
                     </label>
-                    <Input id="nombre" placeholder="Tu nombre" />
+                    <Input
+                      id="nombre"
+                      name="nombre"
+                      value={formData.nombre}
+                      onChange={handleInputChange}
+                      placeholder="Tu nombre"
+                      required
+                    />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email
+                      Email *
                     </label>
-                    <Input id="email" type="email" placeholder="tu@email.com" />
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="tu@email.com"
+                      required
+                    />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="asunto" className="block text-sm font-medium text-gray-700 mb-2">
-                    Asunto
+                    Asunto *
                   </label>
-                  <Input id="asunto" placeholder="Asunto del mensaje" />
+                  <Input
+                    id="asunto"
+                    name="asunto"
+                    value={formData.asunto}
+                    onChange={handleInputChange}
+                    placeholder="Asunto del mensaje"
+                    required
+                  />
                 </div>
                 <div>
                   <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-2">
-                    Mensaje
+                    Mensaje *
                   </label>
-                  <Textarea id="mensaje" placeholder="Cuéntame sobre tu proyecto..." rows={5} />
+                  <Textarea
+                    id="mensaje"
+                    name="mensaje"
+                    value={formData.mensaje}
+                    onChange={handleInputChange}
+                    placeholder="Cuéntame sobre tu proyecto..."
+                    rows={5}
+                    required
+                  />
                 </div>
                 <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700">
-                  Enviar mensaje
+                  Enviar por WhatsApp
                 </Button>
               </form>
             </CardContent>
