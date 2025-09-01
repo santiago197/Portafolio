@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Logo } from "@/components/logo"
 import { Menu, X } from "lucide-react"
 
 export function Header() {
@@ -19,7 +20,7 @@ export function Header() {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-900">Santiago Rodríguez</div>
+          <Logo size="sm" />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
