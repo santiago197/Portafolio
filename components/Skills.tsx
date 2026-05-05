@@ -83,7 +83,7 @@ export function Skills() {
           transition={{ duration: 0.4, delay: 0.3 }}
           className="font-mono text-sm text-[var(--brand-muted)] px-5 py-4 bg-[var(--brand-bg)] border border-[var(--brand-border)] rounded-lg"
         >
-          🔄&nbsp; En proceso: AWS · RabbitMQ / Kafka · Inglés B2 (mejora activa)
+          🔄&nbsp; En proceso: AWS · RabbitMQ / Kafka · Inglés B1 (mejora activa)
         </motion.div>
       </div>
     </section>
