@@ -1,30 +1,42 @@
-# Desarrollo de Portafolio
+# Portafolio — Santiago Rodríguez
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Portafolio personal de Santiago Rodríguez, Desarrollador Full Stack con 6+ años de experiencia, especializado en .NET Core, React, Next.js y TypeScript. Construido con Next.js 15 y desplegado en Vercel.
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/santiago197s-projects/v0-desarrollo-de-portafolio)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/eQZPZiw2Soe)
 
-## Overview
+## Stack
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- **Framework:** Next.js 15 (App Router) + React 19
+- **Lenguaje:** TypeScript
+- **Estilos:** Tailwind CSS + shadcn/ui
+- **Formulario de contacto:** Redirige a WhatsApp con mensaje pre-llenado (sin backend)
 
-## Deployment
+## Desarrollo local
 
-Your project is live at:
+```bash
+pnpm install
+pnpm dev
+```
 
-**[https://vercel.com/santiago197s-projects/v0-desarrollo-de-portafolio](https://vercel.com/santiago197s-projects/v0-desarrollo-de-portafolio)**
+Abre [http://localhost:3000](http://localhost:3000) en el navegador.
 
-## Build your app
+```bash
+pnpm build   # Build de producción
+pnpm lint    # Linter
+```
 
-Continue building your app on:
+## Secciones
 
-**[https://v0.dev/chat/projects/eQZPZiw2Soe](https://v0.dev/chat/projects/eQZPZiw2Soe)**
+| Sección | Descripción |
+|---|---|
+| Inicio | Presentación, foto y enlaces a redes |
+| Sobre mí | Bio profesional y habilidades clave |
+| Experiencia | Trayectoria laboral |
+| Habilidades | Frontend, Backend, BD, DevOps, Metodologías, Móvil |
+| Proyectos | Búhos Nocturnos (.co y .com), IED Bagazal |
+| Contacto | Formulario → WhatsApp |
 
-## How It Works
+## Contacto
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+- GitHub: [github.com/santiago197](https://github.com/santiago197)
+- LinkedIn: [linkedin.com/in/santiago-rodriguezp](https://www.linkedin.com/in/santiago-rodriguezp/)
