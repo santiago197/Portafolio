@@ -95,14 +95,12 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           loading="lazy"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20">
           <span className="font-mono text-xs text-white tracking-widest uppercase">
             Ver proyecto ↗
           </span>
         </div>
-
         {/* Type badge */}
         <div
           className="absolute top-9 left-3 z-10 font-mono text-[9px] px-2 py-0.5 rounded tracking-wider uppercase text-white"
