@@ -97,9 +97,15 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         />
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20">
-          <span className="font-mono text-xs text-white tracking-widest uppercase">
-            Ver proyecto ↗
-          </span>
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="font-mono text-xs text-white tracking-widest uppercase">
+              Ver proyecto ↗
+            </span>
+          </a>
         </div>
         {/* Type badge */}
         <div
