@@ -21,7 +21,7 @@ const PROJECTS: Project[] = [
     type: 'Aplicación web · SaaS',
     description:
       'Plataforma que digitaliza la selección de administradores para conjuntos residenciales colombianos según Ley 675 de 2001. Evaluación ponderada automática, votación individual por consejero, resultados en tiempo real con semáforo visual, exportación PDF y Excel.',
-    url: 'https://v0-sistema-de-administracion-de-pro.vercel.app/',
+    url: 'https://phsuite.vercel.app/',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
     accent: '#2563EB',
   },

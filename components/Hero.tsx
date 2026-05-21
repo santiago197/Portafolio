@@ -69,7 +69,7 @@ export function Hero() {
                 → Ver proyectos
               </button>
               <a
-                href="/cv/CV_Santiago_Rodriguez_2026.pdf"
+                href="/cv/Cv_Santiago_Rodriguez_2026.pdf"
                 download
                 className="px-8 py-3 rounded-md border border-[var(--brand-text)]/20 text-[var(--brand-text)] font-medium text-sm hover:bg-[var(--brand-text)]/5 transition-colors text-center"
                 aria-label="Descargar CV en PDF"
