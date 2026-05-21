@@ -40,9 +40,9 @@ const PROJECTS: Project[] = [
     title: 'Búhos Nocturnos .com',
     type: 'Plataforma web full stack',
     description:
-      'Plataforma web con funcionalidades avanzadas de gestión para la operación interna del negocio, desarrollada con stack completo .NET Core + React + SQL Server.',
+      'Plataforma web con información corporativa, catálogo de productos y blog para licorería nocturna con cobertura en Bogotá y Soacha. Desarrollada con HTML, JavaScript y CSS. SEO optimizado, integración con Google Analytics.',
     url: 'https://buhosnocturnos.com/',
-    stack: ['React', 'Next.js', '.NET Core', 'SQL Server'],
+    stack: ['HTML5', 'CSS3', 'JavaScript'],
     accent: '#7C3AED',
   },
   {
@@ -52,8 +52,18 @@ const PROJECTS: Project[] = [
     description:
       'Portal educativo para institución pública de Bogotá. Sistema de gestión de contenidos, comunicación con la comunidad educativa y publicación de información institucional. Proyecto de impacto social.',
     url: 'https://iedbagazal.edu.co/',
-    stack: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
+    stack: ['NextJS', 'TypeScript', 'Tailwind CSS', 'Google Analytics', 'Supabase'],
     accent: '#059669',
+  },
+  {
+    slug: 'enfercare',
+    title: 'EnferCare',
+    type: 'Plataforma médica · SaaS',
+    description:
+      'Plataforma digital para gestión de pacientes y agendamiento de citas médicas. Funcionalidades de registro de historial clínico, comunicación con médicos y notificaciones automáticas.',
+    url: 'https://enfercare.com/',
+    stack: ['WordPress', 'Elementor', 'PHP', 'MySQL'],
+    accent: '#DC2626',
   },
   {
     slug: 'bot-whatsapp',
@@ -62,7 +72,7 @@ const PROJECTS: Project[] = [
     description:
       'Bot conversacional integrado con la API oficial de WhatsApp Business para automatización de agendamiento de citas. Manejo de flujos conversacionales, persistencia de estado y respuestas automáticas con lógica de negocio configurable.',
     url: 'https://api.whatsapp.com/send/?phone=%2B573505130893&text&type=phone_number&app_absent=0',
-    stack: ['Node.js', 'NestJS', 'WhatsApp Cloud API'],
+    stack: ['Node.js', 'NextJS', 'WhatsApp Cloud API', 'Supabase'],
     accent: '#16A34A',
   },
 ]
