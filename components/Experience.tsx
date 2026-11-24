@@ -14,10 +14,23 @@ interface ExperienceItem {
 
 const EXPERIENCES: ExperienceItem[] = [
   {
+    id: 'sumz',
+    company: 'Sumz',
+    period: 'Jul 2026 – Presente',
+    role: 'Full Stack Developer',
+    bullets: [
+      'Módulo de contratación (en QA): Construí, junto a un desarrollador senior, un módulo completo para contratar proveedores, artistas y eventos, en 2 meses frente a una estimación inicial de 6.',
+      'Desarrollo con agentes de IA: Dirijo Claude Code en varias sesiones en paralelo, con skills de frontend, design system, backend y testing, con revisión humana y pruebas automatizadas incluidas.',
+      'Infraestructura de soporte: almacenamiento de archivos en buckets de GCP, correo transaccional con Resend y autenticación por OTP.',
+      'Automatización con IA: Desarrollo con el equipo la automatización del proceso de contratación con LangGraph y Python (en curso).',
+    ],
+    stack: ['Node.js', 'Effect', 'TypeScript', 'React', 'PostgreSQL', 'Python', 'LangGraph', 'GCP', 'Claude Code'],
+  },
+  {
     id: 'sinco-srm',
     company: 'Sincosoft — SRM / Adproveedor',
     period: 'May 2024 – Abr 2026',
-    role: 'Desarrollador Full Stack Senior',
+    role: 'Desarrollador Full Stack',
     bullets: [
       'Migración paralela (−67% tiempo): Rediseñé el proceso de migración de 1.500+ proveedores desde CSV, reemplazando ejecución síncrona por procesamiento paralelo en .NET. Tiempo: de 60 → 20 minutos. Implementé SignalR para progreso en tiempo real, eliminando el polling.',
       'Módulo de cumplimiento SAGRILAFT (end-to-end): Diseñé y desarrollé desde el análisis del requerimiento hasta producción: dashboard de control, alertas por vencimiento, notificaciones email e integraciones con APIs externas (TusDatos, Inspektor, Compliance).',
@@ -67,7 +80,7 @@ const EXPERIENCES: ExperienceItem[] = [
 ]
 
 export function Experience() {
-  const [activeId, setActiveId] = useState<string>('sinco-srm')
+  const [activeId, setActiveId] = useState<string>('sumz')
 
   const toggle = (id: string) => setActiveId((prev) => (prev === id ? '' : id))
 

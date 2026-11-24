@@ -53,10 +53,14 @@ export function Hero() {
               {...fadeUp(0.2)}
               className="text-lg text-[var(--brand-muted)] mb-10 leading-relaxed"
             >
-              Desarrollador Full Stack Senior
+              Full Stack Developer
               <br />
               <span className="text-[var(--brand-text)] font-medium">
-                .NET 8 · React · TypeScript · Azure DevOps
+                TypeScript · React · Node.js · .NET 8 · IA aplicada
+              </span>
+              <br />
+              <span className="text-sm">
+                Estudiante de la Maestría en Inteligencia Artificial · Universidad Sergio Arboleda
               </span>
             </motion.p>
 

@@ -1,48 +1,59 @@
 'use client'
 
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { motion } from 'framer-motion'
 
-interface Skill {
+interface SkillGroup {
   label: string
-  percent: number
-  tags: string
+  tags: string[]
 }
 
-const SKILLS: Skill[] = [
-  { label: 'Backend',        percent: 92, tags: '.NET 8 · C# · ASP.NET · Entity Framework · SignalR · Node.js' },
-  { label: 'Frontend',       percent: 88, tags: 'React · Next.js · TypeScript · Zustand · TanStack Query · MUI' },
-  { label: 'Bases de datos', percent: 80, tags: 'SQL Server · MySQL · Supabase' },
-  { label: 'DevOps',         percent: 65, tags: 'Azure DevOps · CI/CD · Git · Docker (básico)' },
-  { label: 'IA Tools',       percent: 65, tags: 'Cursor · GitHub Copilot · Claude · V0' },
+const SKILLS: SkillGroup[] = [
+  {
+    label: 'Backend',
+    tags: ['Node.js', 'Effect', '.NET 8', 'C#', 'ASP.NET Core', 'Entity Framework', 'SignalR'],
+  },
+  {
+    label: 'Frontend',
+    tags: ['React', 'Next.js', 'TypeScript', 'Zustand', 'TanStack Query', 'MUI', 'Tailwind CSS'],
+  },
+  {
+    label: 'Bases de datos',
+    tags: ['PostgreSQL', 'SQL Server', 'MySQL', 'Supabase'],
+  },
+  {
+    label: 'Cloud y DevOps',
+    tags: ['GCP', 'Azure DevOps', 'CI/CD', 'Git', 'Docker (básico)'],
+  },
+  {
+    label: 'IA y agentes',
+    tags: ['Claude Code', 'LangGraph', 'Python', 'Claude API', 'GitHub Copilot', 'Cursor'],
+  },
 ]
 
-function SkillBar({ skill, index }: { skill: Skill; index: number }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true })
-
+function SkillRow({ group, index }: { group: SkillGroup; index: number }) {
   return (
-    <div ref={ref} className="flex items-center gap-4">
-      <span className="font-mono text-[11px] text-[var(--brand-muted)] min-w-[120px] tracking-wide">
-        {skill.label}
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.06 }}
+      className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6"
+    >
+      <span className="font-mono text-[11px] text-[var(--brand-muted)] sm:min-w-[140px] tracking-wide uppercase pt-1">
+        {group.label}
       </span>
-      <div className="flex-1 h-[3px] bg-white/5 rounded-full overflow-hidden">
-        <motion.div
-          className="h-full rounded-full bg-gradient-to-r from-[var(--brand-cyan)] to-[#1D6FA0]"
-          initial={{ width: 0 }}
-          animate={isInView ? { width: `${skill.percent}%` } : { width: 0 }}
-          transition={{ duration: 1, ease: 'easeOut', delay: index * 0.08 }}
-          aria-valuenow={skill.percent}
-          aria-valuemin={0}
-          aria-valuemax={100}
-          role="progressbar"
-          aria-label={`${skill.label}: ${skill.percent}%`}
-        />
+      <div className="flex flex-wrap gap-2" role="list" aria-label={group.label}>
+        {group.tags.map((tag) => (
+          <span
+            key={tag}
+            role="listitem"
+            className="font-mono text-[11px] px-2.5 py-1 rounded bg-[var(--brand-cyan)]/10 text-[var(--brand-cyan)] border border-[var(--brand-cyan)]/20"
+          >
+            {tag}
+          </span>
+        ))}
       </div>
-      <span className="text-[11px] text-[var(--brand-muted)] hidden lg:block max-w-[240px] truncate">
-        {skill.tags}
-      </span>
-    </div>
+    </motion.div>
   )
 }
 
@@ -69,9 +80,9 @@ export function Skills() {
           Habilidades
         </motion.h2>
 
-        <div className="space-y-6 mb-12">
-          {SKILLS.map((skill, index) => (
-            <SkillBar key={skill.label} skill={skill} index={index} />
+        <div className="space-y-7 mb-12">
+          {SKILLS.map((group, index) => (
+            <SkillRow key={group.label} group={group} index={index} />
           ))}
         </div>
 
@@ -83,7 +94,8 @@ export function Skills() {
           transition={{ duration: 0.4, delay: 0.3 }}
           className="font-mono text-sm text-[var(--brand-muted)] px-5 py-4 bg-[var(--brand-bg)] border border-[var(--brand-border)] rounded-lg"
         >
-          🔄&nbsp; En proceso: AWS · RabbitMQ / Kafka · Inglés B1 (mejora activa)
+          🔄&nbsp; En proceso: Maestría en IA (primer semestre) · RabbitMQ / Kafka · Inglés B1
+          (mejora activa)
         </motion.div>
       </div>
     </section>

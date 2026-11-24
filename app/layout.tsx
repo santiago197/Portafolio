@@ -26,18 +26,21 @@ const playfairDisplay = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Santiago Rodríguez — Desarrollador Full Stack Senior | .NET · React',
+  title: 'Santiago Rodríguez — Full Stack Developer | TypeScript · React · Node.js · .NET',
   description:
-    'Desarrollador Full Stack con 6+ años en .NET 8 y React. Especializado en ERPs empresariales, CI/CD con Azure DevOps y proyectos en producción. Bogotá, Colombia.',
+    'Full Stack Developer con 6+ años de experiencia en TypeScript, React, Node.js y .NET 8. Desarrollo de software con agentes de IA, ERPs empresariales y proyectos en producción. Estudiante de la Maestría en Inteligencia Artificial. Bogotá, Colombia.',
   keywords: [
-    'desarrollador .net bogota',
     'full stack developer colombia',
     'react developer bogota',
-    'desarrollador senior colombia',
+    'node.js developer bogota',
+    'desarrollador .net bogota',
+    'ai engineer colombia',
+    'desarrollo con agentes de ia',
   ],
   openGraph: {
-    title: 'Santiago Rodríguez — Desarrollador Full Stack Senior',
-    description: '6 años en .NET 8 y React. Proyectos en producción. Bogotá, Colombia.',
+    title: 'Santiago Rodríguez — Full Stack Developer',
+    description:
+      '6+ años en TypeScript, React, Node.js y .NET 8. Desarrollo con agentes de IA. Bogotá, Colombia.',
     type: 'website',
   },
 }

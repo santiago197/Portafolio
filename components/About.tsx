@@ -85,12 +85,21 @@ export function About() {
               cientos de proveedores bajo normativa SAGRILAFT.
             </p>
             <p>
-              Trabajo con el stack que domino —
+              Hoy trabajo en{' '}
+              <span className="text-[var(--brand-text)] font-medium">Sumz</span> con
               <span className="text-[var(--brand-text)] font-medium">
-                .NET 8, React, TypeScript
+                {' '}TypeScript, React y Node.js sobre GCP
               </span>
-              — y con las herramientas que aceleran la entrega: Cursor, GitHub Copilot, Azure
-              DevOps CI/CD.
+              , dirigiendo agentes de IA (Claude Code) para entregar módulos completos con
+              pruebas automatizadas, además de .NET 8 y Azure DevOps CI/CD.
+            </p>
+            <p>
+              Estudio la{' '}
+              <span className="text-[var(--brand-text)] font-medium">
+                Maestría en Inteligencia Artificial
+              </span>{' '}
+              en la Universidad Sergio Arboleda (primer semestre) para diseñar soluciones
+              escalables apoyadas en IA.
             </p>
           </motion.div>
 

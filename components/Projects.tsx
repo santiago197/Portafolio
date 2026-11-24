@@ -67,12 +67,12 @@ const PROJECTS: Project[] = [
   },
   {
     slug: 'bot-whatsapp',
-    title: 'Bot Agendamiento WhatsApp',
-    type: 'Bot · Automatización · Privado',
+    title: 'WallyBot',
+    type: 'SaaS · Bots de WhatsApp',
     description:
-      'Bot conversacional integrado con la API oficial de WhatsApp Business para automatización de agendamiento de citas. Manejo de flujos conversacionales, persistencia de estado y respuestas automáticas con lógica de negocio configurable.',
+      'Plataforma SaaS multi-tenant de bots de WhatsApp para PYMES colombianas: agendamiento de citas, flujos conversacionales con IA, panel de administración y analítica de conversaciones. Con clientes activos en producción. Prueba el bot de demostración.',
     url: 'https://api.whatsapp.com/send/?phone=%2B573505130893&text&type=phone_number&app_absent=0',
-    stack: ['Node.js', 'NextJS', 'WhatsApp Cloud API', 'Supabase'],
+    stack: ['Node.js', 'Express', 'Next.js', 'Supabase', 'WhatsApp Cloud API', 'Claude API'],
     accent: '#16A34A',
   },
 ]

@@ -7,7 +7,7 @@ export function Footer() {
             © 2026 Santiago Rodríguez. Todos los derechos reservados.
           </p>
           <p className="font-mono text-xs text-[var(--brand-muted)] mt-1">
-            Desarrollador Full Stack Senior <span className="text-[var(--brand-cyan)]">·</span> Bogotá D.C., Colombia
+            Full Stack Developer <span className="text-[var(--brand-cyan)]">·</span> Bogotá D.C., Colombia
           </p>
         </div>
       </div>

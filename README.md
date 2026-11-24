@@ -1,6 +1,6 @@
 # Portafolio — Santiago Rodríguez
 
-Portafolio personal de Santiago Rodríguez, Desarrollador Full Stack con 6+ años de experiencia, especializado en .NET Core, React, Next.js y TypeScript. Construido con Next.js 15 y desplegado en Vercel.
+Portafolio personal de Santiago Rodríguez, Full Stack Developer con 6+ años de experiencia en TypeScript, React, Node.js y .NET, con desarrollo asistido por agentes de IA. Estudiante de la Maestría en Inteligencia Artificial (Universidad Sergio Arboleda). Construido con Next.js 15 y desplegado en Vercel.
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/santiago197s-projects/v0-desarrollo-de-portafolio)
 
@@ -32,8 +32,8 @@ pnpm lint    # Linter
 | Inicio | Presentación, foto y enlaces a redes |
 | Sobre mí | Bio profesional y habilidades clave |
 | Experiencia | Trayectoria laboral |
-| Habilidades | Frontend, Backend, BD, DevOps, Metodologías, Móvil |
-| Proyectos | Búhos Nocturnos (.co y .com), IED Bagazal |
+| Habilidades | Backend, Frontend, BD, Cloud y DevOps, IA y agentes |
+| Proyectos | WallyBot, Búhos Nocturnos (.co y .com), IED Bagazal, Selección Admins PH, Enfercare IPS |
 | Contacto | Formulario → WhatsApp |
 
 ## Contacto
