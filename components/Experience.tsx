@@ -19,8 +19,8 @@ const EXPERIENCES: ExperienceItem[] = [
     period: 'Jul 2026 – Presente',
     role: 'Full Stack Developer',
     bullets: [
-      'Módulo de contratación (en QA): Construí, junto a un desarrollador senior, un módulo completo para contratar proveedores, artistas y eventos, en 2 meses frente a una estimación inicial de 6.',
-      'Desarrollo con agentes de IA: Dirijo Claude Code en varias sesiones en paralelo, con skills de frontend, design system, backend y testing, con revisión humana y pruebas automatizadas incluidas.',
+      'Módulo de contratación (en producción): Construí, junto a un desarrollador senior, un módulo completo para contratar proveedores, artistas y eventos, en 2 meses frente a una estimación inicial de 6. Hoy gestiona más de COP 6 billones en contratación.',
+      'Desarrollo con agentes de IA: Trabajo con Spec-Driven Development (SDD) y, actualmente, ODD con Gentle AI. Dirijo Claude Code en varias sesiones en paralelo, con skills de frontend, design system, backend y testing, con revisión humana y pruebas automatizadas incluidas.',
       'Infraestructura de soporte: almacenamiento de archivos en buckets de GCP, correo transaccional con Resend y autenticación por OTP.',
       'Automatización con IA: Desarrollo con el equipo la automatización del proceso de contratación con LangGraph y Python (en curso).',
     ],
